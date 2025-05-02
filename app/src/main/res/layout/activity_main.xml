@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="60dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="20dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/metodos_android_studio"
+        android:textSize="24sp" />
+
+    <Switch
+        android:id="@+id/sw_apagar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:checked="true"
+        android:minHeight="48dp"
+        android:text="@string/activacion"
+        android:visibility="visible"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <LinearLayout
+        android:id="@+id/ly_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_nombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:autofillHints=""
+            android:ems="10"
+            android:hint="@string/introduce_tu_nombre"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColorHint="#546E7A"
+            tools:ignore="VisualLintTextFieldSize" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/b_guardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/guardar_registro_de_usuario" />
+
+    <Spinner
+        android:id="@+id/sp_metodos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:entries="@array/metodos"
+        android:minHeight="48dp"
+        tools:ignore="InefficientWeight,Suspicious0dp" />
+
+    <TextView
+        android:id="@+id/tv_tipometodo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/ly_presentametodo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/rg_opciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            tools:ignore="UselessParent">
+
+            <RadioButton
+                android:id="@+id/rb_opcion1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/opci_n_1" />
+
+            <RadioButton
+                android:id="@+id/rb_opcion2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/opci_n_2" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/cb_seleccion1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:text="@string/checkbox1"
+            tools:text="Selección 1" />
+
+        <CheckBox
+            android:id="@+id/cb_seleccion2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:text="@string/checkbox2"
+            tools:text="Selección 2" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_presentadatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="@string/tvregistrodeusuarios"
+        android:textSize="14sp"
+        tools:text="REGISTRO DE USUARIOS" />
+
+    <Spinner
+        android:id="@+id/sp_usuarios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/tv_datosusuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

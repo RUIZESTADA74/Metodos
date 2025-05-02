@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">METODOS ANDROID STUDIO</string>
+    <string name="metodos_android_studio">Métodos Android Studio</string>
+    <string name="introduce_tu_nombre">Introduce tu Nombre</string>
+    <string name="activacion">[ ENTRADA DE DATOS ] Apagado/Encendido</string>
+    <string name="borrar">Limpiar</string>
+    <string name="opci_n_1">Opción 1</string>
+    <string name="opci_n_2">Opción 2</string>
+    <string name="checkbox1">Selección 1</string>
+    <string name="checkbox2">Selección 2</string>
+    <string name="tvregistrodeusuarios">REGISTRO DE USUARIOS\nElige un nombre de usuario y las diferentes opciones de cada método se guardarán en él al pulsar el botón "Guardar Registro de Usuario". Podrás ver los registros eligiendo al usuario en el Spinner.</string>
+    <string name="tvradiobuttons">RADIOBUTTONS: Contenidos en un RadioGroup, en los Radiobuttons solo es posible seleccionar uno de sus elementos.</string>
+    <string name="tvcheckbox">CHECKBOX: En los Checkbox puedes elegir cualquier opción independientemente, dejándolas marcadas o desmarcadas.</string>
+    <string name="tvspinner">SPINNER: El Spinner contiene opciones en un despleglable. Estas opciones se cargarán desde una lista fija o regenerativa.</string>
+    <string name="guardar_registro_de_usuario">Guardar Registro de Usuario</string>
+    <string-array name="metodos">
+        <item>Spinner</item>
+        <item>RadioButton</item>
+        <item>CheckBox</item>
+    </string-array>
+</resources>
